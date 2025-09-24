@@ -10,11 +10,12 @@ btnEl.addEventListener("click", () => {
 
     }else{
 
-        let liEl = document.createElement("li");
-        let textEl = document.createTextNode(inptEl.value);
+        const liEl = document.createElement("li");
+        const textEl = document.createTextNode(inptEl.value);
 
-        ulEl.appendchild(liEl);
         liEl.appendChild(textEl);
+        ulEl.appendChild(liEl);
+        
         inptEl.value = "";
     }
 });
